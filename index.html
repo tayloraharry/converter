@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convert-a-Temp</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Convert-a-Temp</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Starting Temperature:</label>
+  <div class="col-md-4">
+  <input id="usertemp" name="usertemp" type="number" placeholder="Enter your starting temperature..." class="form-control input-md">
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Desired Unit</label>
+  <div class="col-md-4">
+    <label class="radio-inline">
+      <input type="radio" name="radios" id="toF" checked="true">
+      Fahrenheit
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="radios" id="toC">
+      Celcius
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Converted Temperature:</label>
+  <div class="col-md-4">
+  <input id="converted-temp" type="text" class="form-control input-md">
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="submit" name="button1id" type="button" class="btn btn-success">Convert</button>
+    <button id="clear" name="button2id" type="button" class="btn btn-primary">Clear</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<script src="converter.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
